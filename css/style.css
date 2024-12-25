@@ -1,0 +1,1142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* шрифты */
+
+
+
+@font-face {
+    font-weight: 600;
+    /* Соответствует значению normal */
+    font-family: "CormorantBold";
+    src: url("/fonts/CormorantGaramond-Bold.ttf");
+}
+
+@font-face {
+    font-weight: 400;
+    /* Соответствует значению normal */
+    font-family: "Cormorant";
+    src: url("/fonts/CormorantGaramond-Regular.ttf");
+}
+
+
+@font-face {
+    font-weight: 400;
+    /* Соответствует значению normal */
+    font-family: "GreatVibes";
+    src: url("/fonts/GreatVibes-Regular.ttf");
+}
+
+/* светлая тема */
+
+
+/* темная тема */
+
+:root {
+    --var-bgcolor: #e6d0ca;
+    --var-fontcolor: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --var-bgcolor: #424c3b;
+        --var-fontcolor: #eee;
+
+    }
+
+    .footer__desc {
+        color: #000;
+        font-weight: 600;
+    }
+.footer__seeu{
+    font-weight: 600;
+    color: #000;
+}
+    .footer__yours {
+        color: #000;
+        font-weight: 600;
+    }
+
+    .form__fi::placeholder {
+        color: #eee;
+
+    }
+
+    .form__fi::placeholder {
+        color: #eee;
+
+    }
+
+    .form__num::placeholder {
+        color: white;
+    }
+
+    .msg::placeholder {
+        color: #eee;
+    }
+
+    .msg::placeholder {
+        color: #eee;
+    }
+
+    .pair::placeholder {
+        color: #eee;
+    }
+
+    .pair::placeholder {
+        color: #eee;
+    }
+
+    ::placeholder {
+        color: #eee;
+    }
+
+    input {
+        color: white;
+    }
+
+    .programm__line {
+        border-right: 3px dotted #eee;
+        height: 30px;
+        margin: 0 auto;
+
+        width: 0;
+    }
+
+    .dresscode__block5 {
+        background-color: #424c3b;
+        border: 3px solid black;
+    }
+
+}
+
+body {
+    background-color: var(--var-bgcolor);
+    color: var(--var-fontcolor);
+    font-family: "Cormorant";
+}
+
+h1 {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant";
+    font-weight: 300;
+}
+
+small,
+label,
+input,
+li,
+a,
+ul,
+p,
+div {
+    font-family: "Cormorant";
+    font-weight: 300;
+    font-size: 28px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* header */
+.no__success {
+    text-align: center;
+    font-size: 50px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+.section__title {
+    font-family: 'GreatVibes';
+    font-weight: 500;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+.header__running {
+    margin: 0 auto;
+    width: auto;
+}
+
+.header__lane {
+    text-align: center;
+    text-transform: uppercase;
+    animation: runninglane 5s infinite linear;
+    padding-left: 0;
+    white-space: nowrap;
+    width: auto;
+}
+
+@keyframes runninglane {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.welcome__title {
+    font-family: "GreatVibes";
+}
+
+.welcome__text {
+    text-align: center;
+    padding: 0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.welcome__text2 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 40px;
+
+}
+
+.welcome__text3 {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: "GreatVibes";
+    line-height: 70px;
+    font-size: 60px;
+}
+
+.welcome__photo {
+    max-width: 370px;
+    border-top: none;
+    border: none;
+    border-radius: 45px/90px;
+    margin-bottom: 20px;
+
+}
+
+.bow__block {
+    overflow: hidden;
+}
+
+.welcome__photo-block {
+    text-align: center;
+    position: relative;
+    margin-bottom: 120px;
+
+}
+
+.waiting__data {
+    font-size: 30px;
+}
+
+.bow {
+    position: absolute;
+    top: 760px;
+    width: 300px;
+
+    object-fit: cover;
+}
+
+.waiting__when {
+    text-align: center;
+    padding-bottom: 105px;
+    background: url(/img/Shape-Heart.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -5px;
+    padding-top: 51px;
+}
+
+.waiting__title {
+    font-family: "GreatVibes";
+}
+
+.waiting__click {
+    text-align: center;
+    font-size: 18px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.waiting__calendar {
+    text-align: center;
+}
+
+.calendar__title {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.calendar__day {
+    width: 40px;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.calendar__num {
+    width: 40px;
+    display: inline-block;
+}
+
+.calendar__heart {
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+
+.calendar__num19 {
+    position: relative;
+}
+
+.place__name {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.place__adress {
+    text-align: center;
+    font-size: 22px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.place__links {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+}
+
+.place__yandex {
+    padding-bottom: 10px;
+    display: inline-block;
+    padding: 0;
+    font-size: 26px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.place__google {
+    padding: 0;
+    display: inline-block;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.place__ios {
+
+    display: inline-block;
+    padding: 0;
+    font-size: 26px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.programm__block {
+    text-align: center;
+}
+
+.programm__parts {
+    flex-direction: column;
+    z-index: 1;
+}
+
+.programm__parts:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.programm__parts:not(:first-child) {
+    margin-top: -50px;
+}
+
+.programm__time {
+    margin: 0;
+}
+
+.programm__bow {
+    width: 140px;
+    z-index: -1;
+    margin-bottom: 10px;
+}
+
+.programm__line {
+    border-right: 3px dotted #080808;
+    height: 30px;
+    margin: 0 auto;
+
+    width: 0;
+}
+
+.dresscode__text {
+    text-align: center;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.dresscode__men {
+    text-align: center;
+}
+
+.dresscode__women {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.dresscode__emoji {
+    position: absolute;
+    bottom: 0;
+}
+
+.dresscode__block {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+/* кнопка */
+
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 300px;
+    height: 40px;
+    display: inline-flex;
+
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #000;
+    background: #a6776a;
+    background: linear-gradient(90deg, rgba(216, 174, 156) 0%, rgba(166, 119, 106) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(166, 119, 106);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #a6776a;
+    box-shadow: 0 0 60px rgba(166, 119, 106);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover,
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+.button:hover::before,
+.button:focus::before {
+    opacity: 1;
+}
+
+.button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #a6776a;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.button:hover::after,
+.button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+
+.last-input {
+    margin-bottom: 60px;
+}
+
+.wrap {
+    margin-bottom: 80px;
+}
+
+.dresscode__block1 {
+    background-color: #d4d4ce;
+}
+
+.dresscode__block2 {
+    background-color: #aeb6a5;
+}
+
+.dresscode__block3 {
+    background-color: #8e9b83;
+}
+
+.dresscode__block4 {
+    background-color: #6b7b62;
+}
+
+.dresscode__block5 {
+    background-color: #424c3b;
+
+}
+
+.dresscode__block6 {
+    background-color: #eee4db;
+}
+
+.dresscode__block7 {
+    background-color: #ebe3d2;
+}
+
+.dresscode__block8 {
+    background-color: #d8ae9c;
+}
+
+.dresscode__block9 {
+    background-color: #ce9c90;
+}
+
+.dresscode__block10 {
+    background-color: #a6776a;
+}
+
+.dresscode__block11 {
+    background-color: #424c3b;
+}
+
+.dresscode__blocks {
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.dresscode__block:not(:last-child) {
+    margin-right: 20px;
+}
+
+.wishes__desc {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.wishes__flowers {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wishes__wine {
+    text-align: center;
+}
+
+.wishes__emoji {
+    position: absolute;
+    bottom: 0;
+}
+
+.chat__desc {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.chat__title {
+    display: block;
+    position: relative;
+}
+
+.chat__phone {
+    position: absolute;
+}
+
+
+.chat__link{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.chat__tg {
+    display: block;
+    text-align: center;
+}
+
+.form__text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form__guest {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__fi {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.form__num {
+
+    margin-bottom: 20px;
+}
+
+.radio_option {
+    margin-top: 15px;
+    padding: 0;
+    display: unset;
+}
+
+.form__yes {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form__no {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form__thanks {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__send {
+    text-align: center;
+}
+
+.second__day {
+    text-align: center;
+}
+
+.form__children {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 280px;
+}
+
+.timer__items {
+    display: flex;
+    font-size: 48px;
+    justify-content: space-evenly;
+}
+
+.timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.add {
+    width: 270px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px dashed grey;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+}
+
+.add:hover {
+    cursor: pointer;
+}
+
+.form__transfer {
+    margin-bottom: 20px;
+}
+
+.form__label-transfer {
+    margin-bottom: 20px;
+    display: block;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.form__2day {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__day {
+    display: block;
+}
+
+.form__2day-confirm {
+    margin-bottom: 20px;
+}
+
+.form__2day-yes {
+    display: block;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.form__2day-no {
+    display: block;
+    padding-left: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__hotel-yes {
+    display: block;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.form__label-transfer-no {
+    margin-bottom: 30px;
+}
+
+.form__hotel-no {
+    display: block;
+    padding-left: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__finish {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__hotel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__hotel-yes {
+    margin-bottom: 20px;
+}
+
+.form__btn-wrapper {
+    text-align: center;
+}
+
+#msk,
+#ekb,
+#hbr {
+    display: none;
+}
+
+#id-1:checked~.table #msk,
+#id-2:checked~.table #ekb,
+#id-3:checked~.table #hbr {
+    display: inline;
+}
+
+input:focus {
+    outline: none;
+}
+
+.contacts__more {
+    text-align: center;
+}
+
+.contacts__telephone {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo__desc {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo__fv {
+    justify-content: space-between;
+}
+
+input {
+    border: 3px double #a6776a;
+    border-radius: 30px;
+    width: 100%;
+    height: 45px;
+    background: none;
+    padding: 10px;
+
+}
+
+/* input style */
+.form__fi:hover {
+    background-color: #c2a49c;
+}
+
+.form__num:hover {
+    background-color: #c2a49c;
+}
+
+.msg:hover {
+    background-color: #c2a49c;
+}
+
+.pair:hover {
+    background-color: #c2a49c;
+}
+
+/* active */
+
+.form__fi:active::placeholder {
+    color: #000;
+
+}
+
+.form__fi:focus::placeholder {
+    color: #000;
+
+}
+
+.msg:active::placeholder {
+    color: #000;
+}
+
+.msg:focus::placeholder {
+    color: #000;
+}
+
+.pair:focus::placeholder {
+    color: #000;
+}
+
+.pair:active::placeholder {
+    color: #000;
+}
+
+::placeholder {
+    color: #251c1c7d;
+}
+
+.form__ability {
+    margin-bottom: 20px;
+}
+
+.msg {
+    margin-bottom: 20px;
+}
+
+.form__pair {
+    margin-bottom: 20px;
+}
+
+.pair {
+    margin-bottom: 20px;
+}
+
+.contacts__tel {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contacts__item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts__dd {
+    text-align: center;
+}
+
+.contacts__wu {
+    text-align: center;
+}
+
+.contacts__ddw {
+    text-align: center;
+}
+
+.contacts__ddc {
+    text-align: center;
+}
+
+.contacts__more {
+    margin-bottom: 20px;
+}
+
+.photo__look {
+    text-align: center;
+}
+
+.footer__desc {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer__yours {
+    text-align: center;
+    font-family: 'GreatVibes';
+    font-size: 60px;
+
+}
+
+.footer__photo-block {
+    text-align: center;
+}
+
+.footer__photo {
+    max-width: 370px;
+    border-top: none;
+    border: none;
+    border-radius: 45px / 90px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer__seeu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-image: url(/img/гвордика.png);
+    background-size: 700px;
+    padding-bottom: 80px;
+}
+
+
+.waiting__data,
+.place__yandex,
+.place__ios,
+.contacts__wu,
+.contacts__call,
+.contacts__teleg,
+.chat__join{
+    position: relative;
+    /*задаём цвет ссылки*/
+    cursor: pointer;
+    line-height: 1;
+    /*задаём высоту строки*/
+    text-decoration: none;
+    /*убираем подчёркивание*/
+}
+
+
+
+.waiting__data:after,
+.place__yandex:after,
+.place__ios:after,
+.contacts__wu:after,
+.contacts__call:after,
+.contacts__teleg:after,
+.chat__join:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #ffff;
+    /*задаём цвет линии*/
+    content: "";
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+}
+
+
+.waiting__data:hover::after ,
+.waiting__data:focus:after,
+.place__yandex:hover::after ,
+.place__ios:hover::after ,
+.place__ios:focus:after,
+.place__yandex:focus:after,
+.contacts__call:hover::after ,
+.contacts__call:focus:after,
+.contacts__wu:hover::after ,
+.contacts__wu:focus:after,
+.contacts__teleg:hover::after ,
+.contacts__teleg:focus:after,
+.chat__join:hover::after ,
+.chat__join:focus:after
+{
+    width: 100%;
+    /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+
+}
+
+
+.waiting__data:focus,
+.waiting__data:active,
+.place__yandex:focus,
+.place__yandex:active,
+.place__ios:focus,
+.place__ios:active,
+.contacts__call:focus,
+.contacts__call:active,
+.contacts__wu:focus,
+.contacts__wu:active,
+.contacts__teleg:focus,
+.contacts__teleg:active,
+.chat__join:focus,
+.chat__join:active
+{
+    font-size: 35px;
+    font-family: "CormorantBold";
+}
+
+
+.waiting__data ,
+.place__ios,
+.place__yandex,
+.contacts__wu,
+.contacts__tel,
+.contacts__call,
+.contacts__teleg,
+.photo__look,
+.chat__join,
+.photo__storyvideo{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.chat__icon:hover,
+.chat__icon:focus,
+.chat__icon:active{
+border: 5px double black;
+border-radius: 40px;
+
+}
+.photo__look:hover,
+.photo__look:focus,
+.photo__look:active{
+    text-decoration:underline;
+    text-decoration-color: black;
+    font-weight: 600;
+    
+}
+.photo__storyvideo:hover,
+.photo__storyvideo:focus,
+.photo__storyvideo:active{
+    text-decoration:underline;
+    text-decoration-color: black;
+    font-weight: 600;
+    
+}
+/* afterparty */
+section {
+    padding: 30px 0 30px 0;
+}
+.welcome{
+    padding-bottom: 0;
+}
+.photo__lovestory{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.photo{
+    padding-bottom: 60px;
+}
+.photo__look2{
+    margin-bottom: 10px;
+}
